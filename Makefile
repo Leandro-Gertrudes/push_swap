@@ -6,7 +6,7 @@
 #    By: lgertrud <lgertrud@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/15 12:22:48 by lgertrud          #+#    #+#              #
-#    Updated: 2025/09/04 11:59:04 by lgertrud         ###   ########.fr        #
+#    Updated: 2025/05/21 18:05:05 by lgertrud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ BONUS_NAME = checker
 
 # Compiler and flags
 CC = cc
-CFLAGS = -g
+CFLAGS = -Wall -Werror -Wextra
 
 # Directories
 SRC_DIR = src

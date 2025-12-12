@@ -6,7 +6,7 @@
 /*   By: lgertrud <lgertrud@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 17:59:29 by lgertrud          #+#    #+#             */
-/*   Updated: 2025/06/14 12:21:07 by lgertrud         ###   ########.fr       */
+/*   Updated: 2025/05/21 18:14:41 by lgertrud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 		argv = ft_split_av(argv[1], ' ', &argc);
 	stack = ft_allocation_stacks(argc);
-	if (!stack || !argv || !argv[0])
+	if (!stack || !argv)
 	{
 		ft_free(argv, stack);
 		return (0);
@@ -125,8 +125,8 @@ int	main(int argc, char **argv)
 	if (!check_and_set(argc, argv, stack))
 	{
 		ft_free(argv, stack);
-		write(2,"Error\n",6);
-		exit(1);
+		ft_printf("Error\n");
+		return (0);
 	}
 	if (!set_index(stack, argc - 1))
 	{

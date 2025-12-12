@@ -6,7 +6,7 @@
 /*   By: lgertrud <lgertrud@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 18:28:00 by lgertrud          #+#    #+#             */
-/*   Updated: 2025/05/22 13:59:12 by lgertrud         ###   ########.fr       */
+/*   Updated: 2025/05/21 15:19:05 by lgertrud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,13 +126,13 @@ static int	check_and_set(int argc, char **argv, t_stack *stack)
 	j = argc - 1;
 	while (j >= 1)
 	{
-		val = ft_atol(argv[j]);
+		val = ft_atoi(argv[j]);
 		if (!is_valid_number(argv[j]) || val > 2147483647 || val < -2147483648)
 			return (0);
 		k = j - 1;
 		while (k >= 1)
 		{
-			if (ft_atol(argv[j]) == ft_atoi(argv[k]))
+			if (ft_atoi(argv[j]) == ft_atoi(argv[k]))
 				return (0);
 			k--;
 		}

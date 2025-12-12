@@ -6,7 +6,7 @@
 /*   By: lgertrud <lgertrud@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 14:40:20 by lgertrud          #+#    #+#             */
-/*   Updated: 2025/09/04 12:01:25 by lgertrud         ###   ########.fr       */
+/*   Updated: 2025/05/21 13:52:02 by lgertrud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int	is_ordenate(int *args, int size)
 	int	i;
 
 	i = 0;
-	*(int *)0 = 42;
 	while (i < size - 1)
 	{
 		if (args[i] > args[i + 1])
